@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #ffffff;    
+}
+
+header {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #1e1b4b, #0f172a);
+ }
+
+
+header h1 { 
+    font-size: 3.2rem;  
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+.texto-rebotando {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #a3b2c8;
+    animation: rebotar 3s infinite;
+    font-family: "Raleway", sans-serif;
+}
+
+.button-compras {    
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding: 12px;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: #132738;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.list-products {
+    display: grid;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 1px 1px -5px rgba(46, 99, 149, 0.3);
+    transform-style: preserve-3d;
+    animation: aparecer linear backwards;
+    animation-timeline: view();
+    animation-range: entry 5% contain 50%;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-sku {
+    font-size: 13px;
+    margin: 10px 0 5px 0;
+    font-family: monospace;
+    color: #8b8b8b;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 8px 0 10px 0;
+    font-weight: bold;
+    color: #ebebeb;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #2c8ec6;
+    font-weight: bold;
+    margin: 0px 0 20px 0;
+    
+}
+
+.button-carrito {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #0c689e;
+    color: white;
+    border: none;
+    &:hover {
+        background-color: #0884cb;
+
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.6);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes rebotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+    

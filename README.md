@@ -6,7 +6,7 @@ Sistema de carrito de compras dinámico para una tienda de zapatillas, desarroll
 
 ## 🌐 Demostración
 
-👉 **[Haz clic aquí para probar la Live Demo](https://sebaxlandaeta.github.io/Shopping-Cart/index.html)**
+👉 **[Haz clic aquí para probar la Live Demo](https://sebaxlandaeta.github.io/shopping-cart/)**
 
 ---
 

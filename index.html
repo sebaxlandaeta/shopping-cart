@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Links Css-->
-    <link rel="stylesheet" href="./css/index.css">   
-    <!--Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--Fuentes-->
+    <title>Shopping Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Staatliches&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-   <header>
-        <h1>Tienda online <br> de  <br> zapatos originales</h1>
-        <span class="texto-rebotando">
-            ↓ Puedes visualizar tus compras aquí ↓
-        </span>
-        <a href="shopping-cart.html">
-            <button class="button-compras">Ver mis compras</button>
-        </a>
-   </header> 
-   <main>
-        <section id="products" class="list-products"></section>
-   </main>
+    <header class="hero">
+        <nav class="nav-bar">
+            <a href="shopping-cart.html" class="button-compras">Ver mis compras</a>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Tienda Online de <br><span>Zapatos Originales</span></h1>
+            <span class="texto-rebotando">
+                ↓ Explora nuestro catálogo a continuación ↓
+            </span>
+        </div>
+    </header> 
+    <main class="container">
+        <section id="products" class="list-products"> </section>
+    </main>
+    <script src="./js/main.js"></script>
 </body>
-<!--SCRIPTS-->
-<script src="./js/main.js"></script>
 </html>
